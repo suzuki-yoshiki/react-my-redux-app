@@ -16,7 +16,7 @@ const store = createStore(reducer, applyMiddleware(thunk))
 
 ReactDOM.render(
   <Provider store={store}>
-    <EventsIndex />
+    <EventsIndex />,
   </Provider>,
   document.getElementById("root")
 );

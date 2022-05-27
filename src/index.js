@@ -7,6 +7,7 @@ import './index.css';
 import reducer from './reducers';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+// import registerServiceWorker from "./registerServiceWorker";
 
 const store = createStore(reducer)
 
@@ -14,9 +15,9 @@ ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>
-  document.getElementById("root")
+  // document.getElementById("root")
 );
-registerServiceWorker();
+// registerServiceWorker();
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -24,4 +25,4 @@ registerServiceWorker();
 //     <App />
 //   </React.StrictMode>
 // );
-// reportWebVitals();
+reportWebVitals();
